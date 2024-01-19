@@ -1,40 +1,32 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Assessment 1
+## Created by
+Aaron Tripp A01327234
 
-## Getting Started
+## Description 
+This website was made for the Advanced Dynamic Content Design course (MDIA-3109) at BCIT.
+The purpose of this assessment is to practice using NextJS, Tailwind, TypeScript, and Cypress.
 
-First, run the development server:
+As per the assessment, I did some unit testing to test for:
+- an image on the page
+- two buttons on the page
+- a link going to kaggle (data source)
+- an h1 tag on the page
+- a header on the page
+- a footer on the page
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+I also did two custom tests:
+- the word "Canada" appearing anywhere
+- a number (population) larger than one billion
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Methods Used
+Below are a list of some Cypress methods I used as well as a short description (to the best of my ability)
+- cy.visit: takes a url input. I used this at the start of all my tests to set the website to "localhost:3000"
+- cy.get: locates an element in the DOM
+- cy.contains: similar to cy.get but it locates text within an element
+- cy.origin: I don't fully understand this one, but the Cypress error logs said to use it. From what I've found online, it "allows your tests to bypass the limitation of running commands in a single origin"
+- console.log: outputs information to the console
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Links
+Title: Best Country to Live in 2024
+Creator: Rafsun Ahmad
+URL: [Kaggle - Best Country to Live in 2024](https://www.kaggle.com/datasets/rafsunahmad/best-country-to-live-in-2024)
